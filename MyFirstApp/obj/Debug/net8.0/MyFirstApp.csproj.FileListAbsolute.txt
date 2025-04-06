@@ -1,0 +1,14 @@
+/home/aya/coding/courses/c#/MyFirstApp/bin/Debug/net8.0/MyFirstApp
+/home/aya/coding/courses/c#/MyFirstApp/bin/Debug/net8.0/MyFirstApp.deps.json
+/home/aya/coding/courses/c#/MyFirstApp/bin/Debug/net8.0/MyFirstApp.runtimeconfig.json
+/home/aya/coding/courses/c#/MyFirstApp/bin/Debug/net8.0/MyFirstApp.dll
+/home/aya/coding/courses/c#/MyFirstApp/bin/Debug/net8.0/MyFirstApp.pdb
+/home/aya/coding/courses/c#/MyFirstApp/obj/Debug/net8.0/MyFirstApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/aya/coding/courses/c#/MyFirstApp/obj/Debug/net8.0/MyFirstApp.AssemblyInfoInputs.cache
+/home/aya/coding/courses/c#/MyFirstApp/obj/Debug/net8.0/MyFirstApp.AssemblyInfo.cs
+/home/aya/coding/courses/c#/MyFirstApp/obj/Debug/net8.0/MyFirstApp.csproj.CoreCompileInputs.cache
+/home/aya/coding/courses/c#/MyFirstApp/obj/Debug/net8.0/MyFirstApp.dll
+/home/aya/coding/courses/c#/MyFirstApp/obj/Debug/net8.0/refint/MyFirstApp.dll
+/home/aya/coding/courses/c#/MyFirstApp/obj/Debug/net8.0/MyFirstApp.pdb
+/home/aya/coding/courses/c#/MyFirstApp/obj/Debug/net8.0/MyFirstApp.genruntimeconfig.cache
+/home/aya/coding/courses/c#/MyFirstApp/obj/Debug/net8.0/ref/MyFirstApp.dll
