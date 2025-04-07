@@ -129,6 +129,19 @@
 // public int Age{get;} = age;
 // }
 
+// init 
+Person person = new Person{
+  Name= "a",
+  Age= 6,
+  
+};
+
+Console.WriteLine(person.Age + person.Name);
+public class Person
+{
+  public string Name {get; init;}
+  public int Age{get; init;}
+}
 
 
 
