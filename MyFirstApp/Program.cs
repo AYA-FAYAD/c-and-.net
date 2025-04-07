@@ -31,44 +31,129 @@
 
 
 
-public class Program(){
+// public class Program(){
 
-  public static void Main(){
-    Person person = new Person();
-    //we're setting the value of the private field _name 
-    // through the public property Name, which has a set accessor.
-    person.Name="Aya fayad";
+//   public static void Main(){
+//     Person person = new Person();
+//     //we're setting the value of the private field _name 
+//     // through the public property Name, which has a set accessor.
+//     person.Name="Aya fayad";
 
-    Console.WriteLine("hello " + person.Name);
-  }
-}
+//     Console.WriteLine("hello " + person.Name);
+//   }
+// }
 
-public class Person{
-  private string _name;
+// public class Person{
+//   private string _name;
 
-  public string Name 
-  {
-    get {return _name;}
-    set{_name=value;}
+//   public string Name 
+//   {
+//     get {return _name;}
+//     set{_name=value;}
 
-  }
-}
+//   }
+// }
+
+// Constructors 
+// One constructor 
+
+// Person person = new("AYA FAYAD", 30 );
+// Console.WriteLine(person.Name);
+// public class Person
+// {
+//   public string Name {get; set;}
+//   public int Age {get; set;}
+
+//   public Person(string name, int age )
+//   {
+//     Name = name;
+//     Age = age;
+//   }
+// }
+
+
+// multiple constructors:
+
+// Person person = new Person("hope", 3);
+// Person person2 = new Person("sufrui");
+// Console.WriteLine(person.Name);
+// Console.WriteLine(person2.Name);
+
+
+
+// public class Person
+// {
+//   public string Name { get; set; }
+//     public int Age { get; set; }
+
+//     public Person(string name, int age)
+//     {
+//         Name = name;
+//         Age = age;
+//     }
+    
+//     public Person(string name)
+//     {
+//       Name = name;
+//       Age =0;
+//     }
+
+
+
+// }
+
+
+//this in constructour
+
+// Person person = new Person("aya");
+// Console.WriteLine("hii" + person.Name);
+
+// public class Person{
+//   public string Name {get; set; }
+//     public int Age  {get; set; }
+
+//     public Person (string name, int age){
+//       Name = name;
+//       Age = age;
+//     }
+
+//     public Person (string name) : this(name, 0){
+
+//     }
+// }
+// Primary Constructor
+// Person person = new Person ("aya",5);
+// Console.WriteLine("Hello " + person.Name);
+// public class Person( string name, int age){
+// public string Name{get;} = name;
+// public int Age{get;} = age;
+// }
 
 
 
 
 
+//Thrown exceptions in constructors
 
 
+// Person person = new Person("aya", 30);
+// Person person1 = new Person("aya jj",30);
+// Console.WriteLine(person.Name);
+// Console.WriteLine(person1.Name);
+// public class Person{
+//  public string Name{get; set;}
+//  public int Age { get; set;}
 
+//  public Person(string name, int age){
+//   if (string.IsNullOrWhiteSpace(name)){
+//     throw new ArgumentException("Name connt be empty", nameof(name));
 
+//   }
+//   Name = name;
+//   Age= age;
 
-
-
-
-
-
-
+//  }
+// }
 
 
 

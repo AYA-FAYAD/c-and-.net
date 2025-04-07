@@ -12,3 +12,4 @@
 /home/aya/coding/courses/c#/MyFirstApp/obj/Debug/net8.0/MyFirstApp.pdb
 /home/aya/coding/courses/c#/MyFirstApp/obj/Debug/net8.0/MyFirstApp.genruntimeconfig.cache
 /home/aya/coding/courses/c#/MyFirstApp/obj/Debug/net8.0/ref/MyFirstApp.dll
+/home/aya/coding/courses/c#/MyFirstApp/obj/Debug/net8.0/MyFirstApp.sourcelink.json
