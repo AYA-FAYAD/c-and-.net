@@ -130,18 +130,73 @@
 // }
 
 // init 
-Person person = new Person{
-  Name= "a",
-  Age= 6,
+// Person person = new Person{
+//   Name= "a",
+//   Age= 6,
   
-};
+// };
 
-Console.WriteLine(person.Age + person.Name);
-public class Person
-{
-  public string Name {get; init;}
-  public int Age{get; init;}
+// Console.WriteLine(person.Age + person.Name);
+// public class Person
+// {
+//   public string Name {get; init;}
+//   public int Age{get; init;}
+// }
+
+// Equality of classes
+
+// Person person1 = new Person { Name = "John Doe", Age = 30 };
+// Person person2 = new Person { Name = "John Doe", Age = 30 };
+
+// Console.WriteLine(person1 == person2); // False
+// Console.WriteLine(person1.Equals(person2));
+//  // False
+// public class Person{
+
+// public string Name{get; set;}
+// public int Age {get; set;}
+
+// public override bool Equals(object obj){
+//   if (obj == null || GetType() !=obj.GetType()) return false;
+//   Person other = (Person)obj;
+//   return Name == other.Name && Age == other.Age;
+// }
+
+//     public override int GetHashCode()
+//     {
+//         return HashCode.Combine(Name, Age);
+//     }
+
+
+// }
+var p1 = new Person { Name = "Aya", Age = 26 };
+var p2 = new Person { Name = "Aya", Age = 26 };
+Console.WriteLine(p1 == p2); // False
+ Console.WriteLine(p1.Equals(p2));
+
+public class Person: IEquatable<Person>{
+  public string Name{get; set;}
+  public int Age {get; set;}
+
+  public bool Equals(Person? other){
+    if(other == null ) return false;
+    return Name == other.Name && Age == other.Age;
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
