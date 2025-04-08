@@ -145,30 +145,30 @@
 
 //Equality of classes
 
-Person person1 = new Person { Name = "John Doe", Age = 30 };
-Person person2 = new Person { Name = "John Doe", Age = 30 };
+// Person person1 = new Person { Name = "John Doe", Age = 30 };
+// Person person2 = new Person { Name = "John Doe", Age = 30 };
 
-Console.WriteLine(person1 == person2); // False
-Console.WriteLine(person1.Equals(person2));
- // False
-public class Person{
+// Console.WriteLine(person1 == person2); // False
+// Console.WriteLine(person1.Equals(person2));
+//  // False
+// public class Person{
 
-public string Name{get; set;}
-public int Age {get; set;}
+// public string Name{get; set;}
+// public int Age {get; set;}
 
-public override bool Equals(object obj){
-  if (obj == null || GetType() !=obj.GetType()) return false;
-  Person other = (Person)obj;
-  return Name == other.Name && Age == other.Age;
-}
+// public override bool Equals(object obj){
+//   if (obj == null || GetType() !=obj.GetType()) return false;
+//   Person other = (Person)obj;
+//   return Name == other.Name && Age == other.Age;
+// }
 
-    public override int GetHashCode()
-    {
-        return HashCode.Combine(Name, Age);
-    }
+//     public override int GetHashCode()
+//     {
+//         return HashCode.Combine(Name, Age);
+//     }
 
 
-}
+// }
 // var p1 = new Person { Name = "Aya", Age = 26 };
 // var p2 = new Person { Name = "Aya", Age = 26 };
 // Console.WriteLine(p1 == p2); // False
@@ -186,8 +186,16 @@ public override bool Equals(object obj){
 // }
 
 
-
-
+public record Person(string Name, int Age);
+internal class Program
+{
+  private static void Main(string[] args){
+    Person person1 = new Person("aya", 37);
+    Person person2 = new Person("aya", 37);
+    Console.WriteLine(person1 == person2
+    );
+  }
+}
 
 
 
