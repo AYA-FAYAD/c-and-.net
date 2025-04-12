@@ -186,22 +186,45 @@
 // }
 
 
-public record Person(string Name, int Age);
-internal class Program
-{
-  private static void Main(string[] args){
-    Person person1 = new Person("aya", 37);
-    Person person2 = new Person("aya", 37);
-    Console.WriteLine(person1 == person2
-    );
+// public record Person(string Name, int Age);
+// internal class Program
+// {
+//   private static void Main(string[] args){
+//     Person person1 = new Person("aya", 37);
+//     Person person2 = new Person("aya", 37);
+//     Console.WriteLine(person1 == person2
+//     );
+//   }
+// }
+
+
+
+// inheritance
+
+// base class (parent)
+public class Animal{
+  public void Eat(){
+    Console.WriteLine("i can eat");
   }
 }
 
+// Derived class (child )
 
+public class Dog : Animal
+{
+  public void Bark(){
+    Console.WriteLine("i can brak !");
+  }
+}
 
+class Program{
+  static void Main(){
+    Dog myDog = new Dog();
+    myDog.Eat(); // inherited from Animel;
+    myDog.Bark(); // own method
 
-
-
+  }
+}
 
 
 
