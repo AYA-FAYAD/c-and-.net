@@ -91,7 +91,7 @@
 //         Name = name;
 //         Age = age;
 //     }
-    
+
 //     public Person(string name)
 //     {
 //       Name = name;
@@ -133,7 +133,7 @@
 // Person person = new Person{
 //   Name= "a",
 //   Age= 6,
-  
+
 // };
 
 // Console.WriteLine(person.Age + person.Name);
@@ -201,34 +201,56 @@
 
 // inheritance
 
-// base class (parent)
-public class Animal{
-  public void Eat(){
-    Console.WriteLine("i can eat");
+// // base class (parent)
+// public class Animal{
+//   public void Eat(){
+//     Console.WriteLine("i can eat");
+//   }
+// }
+
+// // Derived class (child )
+
+// public class Dog : Animal
+// {
+//   public void Bark(){
+//     Console.WriteLine("i can brak !");
+//   }
+// }
+
+// class Program{
+//   static void Main(){
+//     Dog myDog = new Dog();
+//     myDog.Eat(); // inherited from Animel;
+//     myDog.Bark(); // own method
+
+//   }
+// }
+
+// Constructor Inheritance:
+
+public class Animal
+{
+  public Animal(string name)
+  {
+    Console.WriteLine($"Animal created : {name}");
   }
 }
-
-// Derived class (child )
 
 public class Dog : Animal
 {
-  public void Bark(){
-    Console.WriteLine("i can brak !");
+  public Dog(string name) : base(name)
+  {
+    Console.WriteLine("Dog is Here !!");
   }
 }
 
-class Program{
-  static void Main(){
-    Dog myDog = new Dog();
-    myDog.Eat(); // inherited from Animel;
-    myDog.Bark(); // own method
-
+class Program
+{
+  static void Main()
+  {
+    Dog myDog = new Dog("love");
   }
 }
-
-
-
-
 
 
 
@@ -288,55 +310,55 @@ class Program{
 // internal class Program{
 //     private static  void Main(string[] args)
 //    {
-    // int a=1;
-    // int b =2;
-    // int c = AddNumbers(a,b);
- 
-    // Console.WriteLine(c);
-    // Console.WriteLine("Hello, World!1");
-    // Console.WriteLine(DateTime.UtcNow.ToLocalTime());
-    // DayOfWeek today = DayOfWeek.Wednesday;
-    // Console.WriteLine(today);
-    // Console.WriteLine((int)today);
-    // EmployeeType role = EmployeeType.Manager;
-    // Console.WriteLine(role);
-    // Console.WriteLine((int)role);
-    // var myTuple = (42, "Hello", true);
-    // Console.WriteLine(myTuple.Item1); // Output: 42
-    // Console.WriteLine(myTuple.Item2); // Output: Hello
-    // Console.WriteLine(myTuple.Item3); // Output: true
+// int a=1;
+// int b =2;
+// int c = AddNumbers(a,b);
 
-  //   int age = 18;
-  //   if(age >=18){
-  //     Console.WriteLine("you are adult ");
-  //   }
+// Console.WriteLine(c);
+// Console.WriteLine("Hello, World!1");
+// Console.WriteLine(DateTime.UtcNow.ToLocalTime());
+// DayOfWeek today = DayOfWeek.Wednesday;
+// Console.WriteLine(today);
+// Console.WriteLine((int)today);
+// EmployeeType role = EmployeeType.Manager;
+// Console.WriteLine(role);
+// Console.WriteLine((int)role);
+// var myTuple = (42, "Hello", true);
+// Console.WriteLine(myTuple.Item1); // Output: 42
+// Console.WriteLine(myTuple.Item2); // Output: Hello
+// Console.WriteLine(myTuple.Item3); // Output: true
 
-    
-  //  } 
+//   int age = 18;
+//   if(age >=18){
+//     Console.WriteLine("you are adult ");
+//   }
 
-  //  public static int  AddNumbers(int a, int b)
-  //  {
-  //    return a + b;
-  //  }
-  
+
+//  } 
+
+//  public static int  AddNumbers(int a, int b)
+//  {
+//    return a + b;
+//  }
+
 // method overloading
-  // public  static int  AddNumbers(int a, int b, int c)
-  //  {
-  //    return a + b;
-  //  }
-  //   public static void PrintMessage()
-  //   {
+// public  static int  AddNumbers(int a, int b, int c)
+//  {
+//    return a + b;
+//  }
+//   public static void PrintMessage()
+//   {
 
-  //   }
+//   }
 
-    // branching logic
+// branching logic
 
-    // public static bool IsEven(int number){
-    //      if(number % 2 ==0){
-    //         return true;
-    //      }
-    //      return false;
-    // }
+// public static bool IsEven(int number){
+//      if(number % 2 ==0){
+//         return true;
+//      }
+//      return false;
+// }
 
 //    public  static int  AddNumbers(params int integers)
 //    {
