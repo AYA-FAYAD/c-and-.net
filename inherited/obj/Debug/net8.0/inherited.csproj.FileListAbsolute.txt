@@ -1,0 +1,15 @@
+/home/aya/coding/courses/c#/inherited/bin/Debug/net8.0/inherited
+/home/aya/coding/courses/c#/inherited/bin/Debug/net8.0/inherited.deps.json
+/home/aya/coding/courses/c#/inherited/bin/Debug/net8.0/inherited.runtimeconfig.json
+/home/aya/coding/courses/c#/inherited/bin/Debug/net8.0/inherited.dll
+/home/aya/coding/courses/c#/inherited/bin/Debug/net8.0/inherited.pdb
+/home/aya/coding/courses/c#/inherited/obj/Debug/net8.0/inherited.GeneratedMSBuildEditorConfig.editorconfig
+/home/aya/coding/courses/c#/inherited/obj/Debug/net8.0/inherited.AssemblyInfoInputs.cache
+/home/aya/coding/courses/c#/inherited/obj/Debug/net8.0/inherited.AssemblyInfo.cs
+/home/aya/coding/courses/c#/inherited/obj/Debug/net8.0/inherited.csproj.CoreCompileInputs.cache
+/home/aya/coding/courses/c#/inherited/obj/Debug/net8.0/inherited.sourcelink.json
+/home/aya/coding/courses/c#/inherited/obj/Debug/net8.0/inherited.dll
+/home/aya/coding/courses/c#/inherited/obj/Debug/net8.0/refint/inherited.dll
+/home/aya/coding/courses/c#/inherited/obj/Debug/net8.0/inherited.pdb
+/home/aya/coding/courses/c#/inherited/obj/Debug/net8.0/inherited.genruntimeconfig.cache
+/home/aya/coding/courses/c#/inherited/obj/Debug/net8.0/ref/inherited.dll
