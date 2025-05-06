@@ -12,7 +12,16 @@ public interface IPayable
 }
 
 
-
+public static class StringExtention
+{
+    public static bool IsPalindrome(this string str)
+    {
+        if (string.IsNullOrEmpty(str))
+            return false;
+        string revesed = new string(str.Reverse().ToArray());
+        return str.Equals(revesed, StringComparison.OrdinalIgnoreCase);
+    }
+}
 public class BaseEmployee
 {
     // public EmployeePymentType PymentType { get; set; }
@@ -135,7 +144,8 @@ public class Program
     public static void Main()
 
     {
-
+        string word = "aya";
+        Console.WriteLine(word.IsPalindrome());
         BaseEmployee employee = new BaseEmployee();
         employee.FirstName = "aya";
         employee.LastName = "fayyad";
